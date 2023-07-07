@@ -15,7 +15,7 @@ export default function Home() {
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-      <img src=""  alt="..."/>
+      <img src="" alt="..."/>
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>Example headline.</h1>
