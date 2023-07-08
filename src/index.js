@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Header from './MyComponent/Header';
 import 'bootstrap/dist/css/bootstrap.css';
+import Home from './MyComponent/Home';
 
 
 
@@ -12,7 +13,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    {/* <Header/>
+    <Home/> */}
   </React.StrictMode>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function

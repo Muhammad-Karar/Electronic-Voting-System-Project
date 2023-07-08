@@ -10,8 +10,9 @@ function App() {
   return (
     <div>
       <Header/>
-      <Home/>
+      <Home/> 
     </div>
+    
   );
 }
 
