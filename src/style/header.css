@@ -6,27 +6,29 @@
     display: flex;
     position: fixed;
     top: 0;
-    background-color: #282525;
+    border: 1px solid black;
+    background-color: #235733;
     z-index: 2;
   }
   
   .nav-logo {
     width: 136%;
-    height: 60px;
-    margin-top: 2px;
-    /* background-color: bisque; */
+    height: 3.8712rem;
+    /* margin-top: 2px; */
+    background-color: white;
     display: flex;
     justify-content: left;
     padding-left: 10px;
     align-items: center;
     font-size: 20px;
-    color: #ffffff;
+    color: #060606;
     letter-spacing: 2px;
   }
   .logo{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: 3px solid black;
   }
 .main-navigation h3{
     padding-left: 12px;
