@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
 
 export default function Footer() {
   return (
@@ -58,7 +58,7 @@ export default function Footer() {
             <p>© 2023 Company, Inc. All rights reserved.</p>
             
             <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-body-emphasis" href="/"><svg class="bi" width="24" height="24"></svg>Facebook</a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="/" ><svg class="bi" width="24" height="24"></svg>Facebook</a></li>
               <li class="ms-3"><a class="link-body-emphasis" href="/"><svg class="bi" width="24" height="24"></svg>Twitter</a></li>
               <li class="ms-3"><a class="link-body-emphasis" href="/"><svg class="bi" width="24" height="24"></svg>Instagram</a></li>
             </ul>
