@@ -1,17 +1,76 @@
-import React from 'react'
+import React,{ useState }  from 'react'
 import pic2 from '../pic2.jpg'
 import pic3 from '../pic3.jpg'
 import pic4 from '../pic4.jpeg'
 
 export default function Home() {
+  const [images, setImages] = useState([pic2, pic3, pic4]);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleSlideChange = (index) => {
+    setActiveIndex(index);
+  };
   return (
+
+    
     <div>
-       <section id="home-section">
-        <div class="home-section-container">
-            
+      <div style={{zIndex: "1" }} id="carouselExampleIndicators" className="carousel slide">
+        <div className="carousel-indicators">
+          {images.map((image, index) => (
+            <button 
+              key={index}
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to={index}
+              className={index === activeIndex ? 'active' : ''}
+              aria-current={index === activeIndex ? 'true' : 'false'}
+              aria-label={`Slide ${index + 1}`}
+              onClick={() => handleSlideChange(index)}
+            ></button>
+          ))}
         </div>
-    </section>
+        <div className="carousel-inner">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`carousel-item ${index === activeIndex ? 'active' : ''}`}
+            >
+              <img src={image} className="d-block w-100" alt={`Slide ${index + 1}`} />
+            </div>
+          ))}
+        </div>
+        <button style={{backgroundColor:"transparent"}}
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+          onClick={() =>
+            handleSlideChange((activeIndex - 1 + images.length) % images.length)
+          }
+        >
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button style={{backgroundColor:"transparent"}}
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+          onClick={() => handleSlideChange((activeIndex + 1) % images.length)}
+        >
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
+
+    // <div>
+    //    <section id="home-section">
+    //     <div class="home-section-container">
+            
+    //     </div>
+    // </section>
+    // </div>
     // <div>
 
     // <div className="container">

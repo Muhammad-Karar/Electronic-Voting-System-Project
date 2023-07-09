@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
   return (
-    <div>
-      <div class="container">
-        <footer class="py-5">
+    <div style={{ backgroundColor: "lightyellow"}}>
+      <div class="container  " >
+        <footer class="py-5 mx-0">
           <div class="row">
             <div class="col-6 col-md-2 mb-3">
               <h5>Section</h5>
@@ -54,11 +56,16 @@ export default function Footer() {
 
           <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
             <p>© 2023 Company, Inc. All rights reserved.</p>
+            
             <ul class="list-unstyled d-flex">
               <li class="ms-3"><a class="link-body-emphasis" href="/"><svg class="bi" width="24" height="24"></svg>Facebook</a></li>
               <li class="ms-3"><a class="link-body-emphasis" href="/"><svg class="bi" width="24" height="24"></svg>Twitter</a></li>
               <li class="ms-3"><a class="link-body-emphasis" href="/"><svg class="bi" width="24" height="24"></svg>Instagram</a></li>
             </ul>
+            <p class="float-end"><a href="#"><FontAwesomeIcon icon={faArrowUpFromBracket} size="lg" /></a></p>
+            
+            
+
           </div>
         </footer>
       </div>

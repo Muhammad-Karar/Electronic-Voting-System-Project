@@ -3,6 +3,7 @@ import React from 'react';
 import pic1 from '../pic1jpeg.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserPlus } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 export default function Header() {
   return (
     // <div>
@@ -94,7 +95,7 @@ export default function Header() {
     // </div>
     // </div>
     <div>
-      <div style={{ backgroundColor: "#235733" }}>
+      <div style={{ backgroundColor: "#235733", zIndex: "3"}}>
         <header class="py-2 mb-2 border-bottom ">
           <div class="container d-flex flex-wrap justify-content-center ">
             <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
@@ -104,8 +105,8 @@ export default function Header() {
             </a>
             <form class="col-12 d-flex col-lg-auto mb-3 mb-lg-0" role="search">
 
-              <input type="search" class="form-control" placeholder="Search..." aria-label="Search" />
-              <button type='button' className="btn btn-outline-dark mx-2">search</button>
+              <input type="search" class="form-control h-75 my-2" placeholder="Search..." aria-label="Search" />
+              <button type='button' className="btn btn-outline-light h-75 my-2 mx-2">search</button>
             </form>
           </div>
         </header>
@@ -122,7 +123,9 @@ export default function Header() {
             </ul>
             <div class="text-end">
               <button type="button" class="btn btn-outline-dark me-2">Login</button>
-              <button type="button" class="btn btn-dark">Sign-up</button>
+              <Link to="/sigup">
+              <button type="button" class="btn btn-dark">  Sign-up</button>
+              </Link>
             </div>
           </div>
         </nav>
