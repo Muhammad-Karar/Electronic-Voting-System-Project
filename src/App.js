@@ -4,6 +4,7 @@ import Header from './MyComponent/Header';
 import Home from './MyComponent/Home';
 import '../src/style/header.css'
 import '../src/style/home.css'
+import Footer from './MyComponent/Footer';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div>
       <Header/>
       <Home/> 
+      <Footer/>
     </div>
     
   );
