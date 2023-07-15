@@ -117,7 +117,7 @@ export default function Header() {
             <ul class="nav me-auto">
               <li class="nav-item"><a href="/" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active" aria-current="page">Home</a></li>
               <li class="nav-item"><a href="/" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">About</a></li>
-              <li class="nav-item"><a href="/" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Candidates</a></li>
+              <li class="nav-item"><Link to="/candidate" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Candidates</Link></li>
               <li class="nav-item"><a href="/" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Result</a></li>
               <li class="nav-item"><Link to="/contactinfo" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Contact</Link></li>
             </ul>

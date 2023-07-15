@@ -9,6 +9,7 @@ import Signup from './MyComponent/Signup';
 import Login from './MyComponent/Login';
 import Contact from './MyComponent/Contact';
 import { Route, Routes } from 'react-router-dom';
+import Candidates from './MyComponent/Candidates';
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
         <Route path='/sigup' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/' element = {<Home/>}/>  
-        <Route path='/contactinfo' element = {<Contact/>}/>      
+        <Route path='/contactinfo' element = {<Contact/>}/>   
+        <Route path='/candidate' element = {<Candidates/>}/>    
         </Routes>
    
   
