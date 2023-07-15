@@ -25,7 +25,8 @@ export default function Contact() {
                     <i><FontAwesomeIcon icon={faEnvelope} style={{color: "#ed0c0c",}} /></i>
                         <h1>mail</h1>
                         <p>kararmuhammad8@gmail.com <br />
-                        daudrazzaq7890@gmail.com</p>
+                        daudrazzaq7890@gmail.com
+                        neelabkhattak99@gmail.com</p>
                     </div>
                     <div class="contact-1">
                         <i><FontAwesomeIcon icon={faHouse} style={{color: "#ed0c0c",}} /></i>

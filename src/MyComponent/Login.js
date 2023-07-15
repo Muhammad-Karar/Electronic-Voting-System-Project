@@ -18,7 +18,7 @@ export default function Login() {
 
           <Link style={{color: "white", marginLeft: "100px" }} to="/Signup">Forgot password?</Link> <br /><br />
 
-          No registered: <Link style={{color: "white", }} to="/sigup">signup</Link><br /><br />
+          Not registered: <Link style={{color: "white", }} to="/sigup">signup</Link><br /><br />
 
           <button type="submit" className='btn2' name='text6' value="">Login</button>
         
