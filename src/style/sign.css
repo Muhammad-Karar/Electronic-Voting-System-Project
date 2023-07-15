@@ -1,0 +1,38 @@
+
+.sign-up{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(74, 75, 75);
+    /* margin-left: 345px; */
+    text-align: center;
+    padding-top: 50px;
+    background-blend-mode: lighten;
+}
+.sign-up-input{
+    width: 32%;
+    height: 500px;
+    color: white;
+    background-color: rgb(57, 82, 50);
+    margin-left: 485px;
+    /* margin-top: 10px; */
+    padding-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn1{
+    color: white;
+    background-color: rgb(57, 82, 50);
+    width: 80px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid white;
+
+}
+.btn1:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}

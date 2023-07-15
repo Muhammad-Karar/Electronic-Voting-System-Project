@@ -119,10 +119,13 @@ export default function Header() {
               <li class="nav-item"><a href="/" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">About</a></li>
               <li class="nav-item"><a href="/" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Candidates</a></li>
               <li class="nav-item"><a href="/" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Result</a></li>
-              <li class="nav-item"><a href="/" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Contact</a></li>
+              <li class="nav-item"><Link to="/contactinfo" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Contact</Link></li>
             </ul>
+            
             <div class="text-end">
+              <Link to="/login">
               <button type="button" class="btn btn-outline-dark me-2">Login</button>
+              </Link>
               <Link to="/sigup">
               <button type="button" class="btn btn-dark">  Sign-up</button>
               </Link>

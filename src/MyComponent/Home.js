@@ -1,7 +1,7 @@
 import React,{ useState }  from 'react'
 import pic2 from '../pic2.jpg'
 import pic3 from '../pic3.jpg'
-import pic4 from '../pic4.jpeg'
+import pic4 from '../pic4.jpg'
 
 export default function Home() {
   const [images, setImages] = useState([pic2, pic3, pic4]);
@@ -14,7 +14,7 @@ export default function Home() {
 
     
     <div>
-      <div style={{zIndex: "1" }} id="carouselExampleIndicators" className="carousel slide">
+      <div style={{zIndex: "1"}} id="carouselExampleIndicators" className="carousel slide">
         <div className="carousel-indicators">
           {images.map((image, index) => (
             <button 
@@ -35,7 +35,7 @@ export default function Home() {
               key={index}
               className={`carousel-item ${index === activeIndex ? 'active' : ''}`}
             >
-              <img src={image} className="d-block w-100" alt={`Slide ${index + 1}`} />
+              <img src={image} className="d-block w-100 " alt={`Slide ${index + 1}`} />
             </div>
           ))}
         </div>
