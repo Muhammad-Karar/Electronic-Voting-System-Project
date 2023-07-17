@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -15,7 +16,8 @@ export default function Footer() {
                 <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">About</a></li>
                 <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Candidates</a></li>
                 <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Result</a></li>
-                <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Contact</a></li>
+                <li class="nav-item mb-2"><Link to="/contactinfo" class="nav-link p-0 text-body-secondary">Contact</Link></li>
+                
               </ul>
             </div>
 
@@ -26,7 +28,7 @@ export default function Footer() {
                 <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">About</a></li>
                 <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Candidates</a></li>
                 <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Result</a></li>
-                <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Contact</a></li>
+                <li class="nav-item mb-2"><Link to="/contactinfo" class="nav-link p-0 text-body-secondary">Contact</Link></li>
               </ul>
             </div>
 
