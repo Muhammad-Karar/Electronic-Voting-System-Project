@@ -95,43 +95,47 @@ export default function Header() {
     // </div>
     // </div>
     <div>
-      <div style={{ backgroundColor: "#235733", zIndex: "3"}}>
-        <header class="py-2 mb-2 border-bottom ">
+      <div style={{ backgroundColor: "#235733", zIndex: "3", width: "100%", }}>
+        <header class="py-2 border-bottom ">
           <div class="container d-flex flex-wrap justify-content-center ">
-            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+
+            <Link to="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
               <img src={pic1} className='logo' alt="logo" />
               {/* <h4 class="my-2 mx-2">Evoting</h4> */}
               <span class="fs-4 mx-2">Evoting</span>
-            </a>
+            </Link>
+
             <form class="col-12 d-flex col-lg-auto mb-3 mb-lg-0" role="search">
 
               <input type="search" class="form-control h-75 my-2" placeholder="Search..." aria-label="Search" />
               <button type='button' className="btn btn-outline-light h-75 my-2 mx-2">search</button>
             </form>
           </div>
+
         </header>
-      </div>
-      <div style={{ backgroundColor: "white" }}>
-        <nav class="border-bottom">
-          <div class="container d-flex flex-wrap">
-            <ul class="nav me-auto">
-              <li class="nav-item"><Link to="/" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active" aria-current="page">Home</Link></li>
-              <li class="nav-item"><Link to="/about" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">About</Link></li>
-              <li class="nav-item"><Link to="/candidate" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Candidates</Link></li>
-              <li class="nav-item"><Link to="/result" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Result</Link></li>
-              <li class="nav-item"><Link to="/contactinfo" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Contact</Link></li>
-            </ul>
-            
-            <div class="text-end">
-              <Link to="/login">
-              <button type="button" class="btn btn-outline-dark me-2">Login</button>
-              </Link>
-              <Link to="/sigup">
-              <button type="button" class="btn btn-dark">  Sign-up</button>
-              </Link>
+
+        <div style={{ backgroundColor: "white", paddingTop: "5px" }}>
+          <nav class="border-bottom">
+            <div class="container px-2 d-flex flex-wrap">
+              <ul class="nav me-auto">
+                <li class="nav-item"><Link to="/" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active" aria-current="page">Home</Link></li>
+                <li class="nav-item"><Link to="/about" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">About</Link></li>
+                <li class="nav-item"><Link to="/candidate" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Candidates</Link></li>
+                <li class="nav-item"><Link to="/result" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Result</Link></li>
+                <li class="nav-item"><Link to="/contactinfo" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Contact</Link></li>
+              </ul>
+
+              <div class="text-end">
+                <Link to="/login">
+                  <button type="button" class="btn btn-outline-dark me-2">Login</button>
+                </Link>
+                <Link to="/sigup">
+                  <button type="button" class="btn btn-dark">  Sign-up</button>
+                </Link>
+              </div>
             </div>
-          </div>
-        </nav>
+          </nav>
+        </div>
       </div>
     </div>
   )

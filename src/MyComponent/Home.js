@@ -4,7 +4,7 @@ import pic3 from '../pic3.jpg'
 import pic4 from '../pic4.jpg'
 
 export default function Home() {
-  const [images, setImages] = useState([pic2, pic3, pic4]);
+  const [images, setImages] = useState([pic4, pic3, pic2]);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleSlideChange = (index) => {

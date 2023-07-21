@@ -1,6 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
+// import { faFacebook } from '@fortawesome/free-regular-svg-icons';
+// import { faTwitter } from '@fortawesome/free-solid-svg-icons';
+
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -60,9 +63,10 @@ export default function Footer() {
             <p>© 2023 Company, Inc. All rights reserved.</p>
             
             <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-body-emphasis" href="/" ><svg class="bi" width="24" height="24"></svg>Facebook</a></li>
-              <li class="ms-3"><a class="link-body-emphasis" href="/"><svg class="bi" width="24" height="24"></svg>Twitter</a></li>
-              <li class="ms-3"><a class="link-body-emphasis" href="/"><svg class="bi" width="24" height="24"></svg>Instagram</a></li>
+            
+              <li class="ms-3"><Link to="/"  class="link-body-emphasis"><svg class="bi" width="24" height="24"></svg>Facebook</Link></li>
+              <li class="ms-3"><Link to="/"  class="link-body-emphasis"><svg class="bi" width="24" height="24"></svg>Twitter</Link></li>
+              <li class="ms-3"><Link to="/"  class="link-body-emphasis"><svg class="bi" width="24" height="24"></svg>Instagram</Link></li>
             </ul>
             <p class="float-end"><a href="#"><FontAwesomeIcon icon={faArrowUpFromBracket} size="lg" /></a></p>
             
