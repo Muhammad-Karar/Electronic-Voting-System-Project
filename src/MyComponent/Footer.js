@@ -12,10 +12,10 @@ export default function Footer() {
             <div class="col-6 col-md-2 mb-3">
               <h5>Section</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Home</a></li>
-                <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">About</a></li>
-                <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Candidates</a></li>
-                <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Result</a></li>
+                <li class="nav-item mb-2"><Link to="/" class="nav-link p-0 text-body-secondary">Home</Link></li>
+                <li class="nav-item mb-2"><Link to="/about" class="nav-link p-0 text-body-secondary">About</Link></li>
+                <li class="nav-item mb-2"><Link to="/candidate" class="nav-link p-0 text-body-secondary">Candidates</Link></li>
+                <li class="nav-item mb-2"><Link to="/result" class="nav-link p-0 text-body-secondary">Result</Link></li>
                 <li class="nav-item mb-2"><Link to="/contactinfo" class="nav-link p-0 text-body-secondary">Contact</Link></li>
                 
               </ul>
@@ -24,10 +24,10 @@ export default function Footer() {
             <div class="col-6 col-md-2 mb-3">
               <h5>Section</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Home</a></li>
-                <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">About</a></li>
-                <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Candidates</a></li>
-                <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Result</a></li>
+                <li class="nav-item mb-2"><Link to="/" class="nav-link p-0 text-body-secondary">Home</Link></li>
+                <li class="nav-item mb-2"><Link to="/about" class="nav-link p-0 text-body-secondary">About</Link></li>
+                <li class="nav-item mb-2"><Link to="/candidate" class="nav-link p-0 text-body-secondary">Candidates</Link></li>
+                <li class="nav-item mb-2"><Link to="/result" class="nav-link p-0 text-body-secondary">Result</Link></li>
                 <li class="nav-item mb-2"><Link to="/contactinfo" class="nav-link p-0 text-body-secondary">Contact</Link></li>
               </ul>
             </div>

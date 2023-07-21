@@ -10,7 +10,8 @@ import Login from './MyComponent/Login';
 import Contact from './MyComponent/Contact';
 import { Route, Routes } from 'react-router-dom';
 import Candidates from './MyComponent/Candidates';
-
+import About from './MyComponent/About';
+import Result from './MyComponent/Result';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Route path='/sigup' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/' element = {<Home/>}/>  
+        <Route path='/about' element = {<About/>}/> 
+        <Route path='/result' element = {<Result/>}/> 
         <Route path='/contactinfo' element = {<Contact/>}/>   
         <Route path='/candidate' element = {<Candidates/>}/>    
         </Routes>

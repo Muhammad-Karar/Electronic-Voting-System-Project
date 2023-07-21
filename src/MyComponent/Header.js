@@ -115,10 +115,10 @@ export default function Header() {
         <nav class="border-bottom">
           <div class="container d-flex flex-wrap">
             <ul class="nav me-auto">
-              <li class="nav-item"><a href="/" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active" aria-current="page">Home</a></li>
-              <li class="nav-item"><a href="/" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">About</a></li>
+              <li class="nav-item"><Link to="/" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active" aria-current="page">Home</Link></li>
+              <li class="nav-item"><Link to="/about" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">About</Link></li>
               <li class="nav-item"><Link to="/candidate" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Candidates</Link></li>
-              <li class="nav-item"><a href="/" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Result</a></li>
+              <li class="nav-item"><Link to="/result" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Result</Link></li>
               <li class="nav-item"><Link to="/contactinfo" class="nav-link bi d-block mx-auto mb-1 text-dark px-2 active">Contact</Link></li>
             </ul>
             
