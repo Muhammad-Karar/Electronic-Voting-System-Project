@@ -31,7 +31,7 @@ export default function Contact() {
                     <div class="contact-1">
                         <i><FontAwesomeIcon icon={faHouse} style={{color: "#ed0c0c",}} /></i>
                         <h1>address</h1>
-                        <p>Village and post office usterzai payan Tehsil and Distric kohat</p>
+                        <p>COMSATS University Islamabad, Abbottabad Campus</p>
                     </div>
                 </section>
             </div>
