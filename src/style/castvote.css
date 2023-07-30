@@ -9,6 +9,47 @@
 .cv-div{
     width: 70%;
     height: 70vh;
-    background-color: white;
+    /* background-color: white; */
     margin: auto;
+    padding-top: 65px;
+}
+
+.cv-write-div{
+    width: 60%;
+    height: 50vh;
+    /* color: white; */
+    color: black;
+    /* background-color: rgb(57, 82, 50); */
+    background-color: white;
+    border: 2px solid black;
+    margin: auto;
+    padding: 30px;
+    /* display: flex; */
+    
+}
+.cv-write-div h3{
+    margin-left: 40px;
+}
+.cv-write-div h5{
+    margin-left: 40px;
+}
+
+#check{
+    margin-left: 40px;
+}
+
+#cvbtn1{
+    color: rgb(12, 12, 12);
+    background-color: rgb(244, 247, 243);
+    width: 80px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid rgb(11, 11, 11);
+    margin-left: 230px;
+}
+#cvbtn1:hover{
+    background-color: rgb(12, 12, 12);
+    color: rgb(233, 228, 228);
+    transition: 0.5s;
 }
