@@ -17,7 +17,8 @@
 .res-in-div1{
     width: 90%;
     height: 15vh;
-    background-color: aqua;
+    /* background-color: aqua; */
+    border: 2px solid black;
     margin: auto;
     margin-top: 5px;
 }
@@ -25,7 +26,8 @@
 .res-in-div2{
     width: 90%;
     height: 15vh;
-    background-color: rgb(29, 34, 34);
+    /* background-color: rgb(29, 34, 34); */
+    border: 2px solid black;
     margin: auto;
     margin-top: 5px;
 }
@@ -33,7 +35,8 @@
 .res-in-div3{
     width: 90%;
     height: 15vh;
-    background-color: rgb(15, 39, 220);
+    /* background-color: rgb(15, 39, 220); */
+    border: 2px solid black;
     margin: auto;
     margin-top: 5px;
 }
@@ -41,7 +44,8 @@
 .res-in-div4{
     width: 90%;
     height: 15vh;
-    background-color: rgb(44, 218, 10);
+    /* background-color: rgb(44, 218, 10); */
+    border: 2px solid black;
     margin: auto;
     margin-top: 5px;
 }
@@ -49,7 +53,8 @@
 .res-in-div5{
     width: 90%;
     height: 15vh;
-    background-color: rgb(223, 223, 10);
+    /* background-color: rgb(223, 223, 10); */
+    border: 2px solid black;
     margin: auto;
     margin-top: 5px;
 }
@@ -57,7 +62,8 @@
 .res-in-div6{
     width: 90%;
     height: 15vh;
-    background-color: rgb(158, 20, 105);
+    /* background-color: rgb(158, 20, 105); */
+    border: 2px solid black;
     margin: auto;
     margin-top: 5px;
 }

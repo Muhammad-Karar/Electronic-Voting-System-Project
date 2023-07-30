@@ -1,63 +1,87 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import Castvote from './Castvote';
 import cpic1 from '../cpic1.jpeg';
 import cpic2 from '../cpic2.jpg';
 import cpic3 from '../cpic3.jpg';
 import cpic4 from '../cpic4.jpg';
 import cpic5 from '../cpic5.jpeg';
 import cpic6 from '../cpic6.jpg';
+import ptibat from '../ptibat.png';
+import pmlsher from '../pmlsher.jpeg';
+import ppparrow from '../ppparrow.png';
+import anplaltain from '../anplaltain.jpeg';
+import juibook from '../juibook.jpg';
+import pmlqtracter from '../pmlqtracter.jpg';
 import ptiflag from '../ptiflag.png';
-import { Link } from 'react-router-dom';
+
+const candidatesData = [
+  {
+    title: 'Imran khan',
+    party: 'Pakistan Tehrek-e-Insaf',
+    image: cpic1,
+    image1: ptibat
+  },
+  {
+    title: 'Shahbaz sharif',
+    party: 'Pakistan Muslim League-N',
+    image: cpic2,
+    image1: pmlsher
+  },
+  {
+    title: 'Bilawal bhutto',
+    party: 'Pakistan Peoples party',
+    image: cpic3,
+    image1: ppparrow
+  },
+  {
+    title: 'Aimal wali khan',
+    party: 'Awami National Party',
+    image: cpic4,
+    image1: anplaltain
+  },
+  {
+    title: 'Siraj ul Haq ',
+    party: 'Jamaat-e-Islami ',
+    image: cpic5,
+    image1: juibook
+  },
+  {
+    title: 'Shujaat Hussain',
+    party: 'Pakistan Muslim League-Q',
+    image: cpic6,
+    image1: pmlqtracter
+  },
+];
+
 export default function Candidates() {
-    return (
-        <div style={{ backgroundColor: "rgb(74, 75, 75)",display: "flex", justifyContent: "center", height: "90vh" }}>
-            <div  style={{marginLeft: "200px",paddingTop: "50px",color: "white" }} Class="container">
+  const [selectedCandidate, setSelectedCandidate] = useState(candidatesData[0]);
+  const navigate = useNavigate();
 
+  const OnClickPti = (candidate) => {
+    setSelectedCandidate(candidate);
+    navigate('/castvote', { state: { title: candidate.title, party: candidate.party, image1: candidate.image1 } });
+  };
 
-                    <div class="row">
-                        <div class="col-lg-4">
-                            {/* <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns={cpic1} role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> */}
-                            <img style={{width: "140px",height: "140px" }} class="bd-placeholder-img rounded-circle " src={cpic1} alt="" />
-                            <h2 class="fw-normal">Imran Khan</h2>
-                            <p>Chaiman (Pakistan Tehrek-e-Insaf).</p>
-                            <p><Link to="/castvote" class="btn btn-outline-light">Cast vote »</Link></p>
-                        </div>
-                        <div class="col-lg-4">
-                            {/* <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> */}
-                            <img style={{width: "140px",height: "140px" }} class="bd-placeholder-img rounded-circle " src={cpic2} alt="" />
-                            <h2 class="fw-normal">shahbaz sharif</h2>
-                            <p>Chaiman (Pakistan Muslim League-N).</p>
-                            <p><Link to="/castvote" class="btn btn-outline-light">Cast vote »</Link></p>
-                        </div>
-                        <div class="col-lg-4">
-                            {/* <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> */}
-                            <img style={{width: "140px",height: "140px" }} class="bd-placeholder-img rounded-circle " src={cpic3} alt="" />
-                            <h2 class="fw-normal">Bilawal Bhutto</h2>
-                            <p>Chaiman (Pakistan Peoples Party).</p>
-                            <p><Link to="/castvote" class="btn btn-outline-light">Cast vote »</Link></p>
-                        </div>
-                        <div class="col-lg-4">
-                            {/* <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> */}
-                            <img style={{width: "140px",height: "140px" }} class="bd-placeholder-img rounded-circle " src={cpic4} alt="" />
-                            <h2 class="fw-normal">Aimal wali khan</h2>
-                            <p>Chaiman (Awami National Party).</p>
-                            <p><Link to="/castvote" class="btn btn-outline-light">Cast vote »</Link></p>
-                        </div>
-                        <div class="col-lg-4">
-                            {/* <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> */}
-                            <img style={{width: "140px",height: "140px" }} class="bd-placeholder-img rounded-circle " src={cpic5} alt="" />
-                            <h2 class="fw-normal">Siraj ul Haq</h2>
-                            <p>Chaiman (Jamiat Ulema-e-Islam).</p>
-                            <p><Link to="/castvote" class="btn btn-outline-light">Cast vote »</Link></p>
-                        </div>
-                        <div class="col-lg-4">
-                            {/* <svg class="bd-placeh/older-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> */}
-                            <img style={{width: "140px",height: "140px" }} class="bd-placeholder-img rounded-circle " src={cpic6} alt="" />
-                            <h2 class="fw-normal">shujaat hussain</h2>
-                            <p>Chaiman (Pakistan Muslim League-Q).</p>
-                            <p><Link to="/castvote" class="btn btn-outline-light">Cast vote »</Link></p>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div style={{ backgroundColor: 'rgb(74, 75, 75)', display: 'flex', justifyContent: 'center', height: '100vh' }}>
+      <div style={{ marginLeft: '200px', paddingTop: '30px', color: 'white' }} className="container">
+        <div className="row">
+          {candidatesData.map((candidate, index) => (
+            <div style={{ paddingTop: '30px' }} className="col-lg-4" key={index}>
+              <img style={{ width: '140px', height: '140px' }} className="bd-placeholder-img rounded-circle" src={candidate.image} alt="" />
+              <h2 className="fw-normal">{candidate.title}</h2>
+              <p>{`Chaiman (${candidate.party}).`}</p>
+              <button type="button" className="btn btn-outline-light" onClick={() => {
+                setSelectedCandidate(candidate);
+                navigate('/castvote', { state: { title: candidate.title, party: candidate.party, image1: candidate.image1 } });
+              }}>
+                Cast vote »
+              </button>
             </div>
-            )
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }
