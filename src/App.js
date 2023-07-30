@@ -12,7 +12,7 @@ import { Route, Routes } from 'react-router-dom';
 import Candidates from './MyComponent/Candidates';
 import About from './MyComponent/About';
 import Result from './MyComponent/Result';
-
+import Castvote from './MyComponent/Castvote';
 function App() {
   return (
     <div>
@@ -24,7 +24,8 @@ function App() {
         <Route path='/about' element = {<About/>}/> 
         <Route path='/result' element = {<Result/>}/> 
         <Route path='/contactinfo' element = {<Contact/>}/>   
-        <Route path='/candidate' element = {<Candidates/>}/>    
+        <Route path='/candidate' element = {<Candidates/>}/> 
+        <Route path='/castvote' element = {<Castvote/>}/>   
         </Routes>
    
   

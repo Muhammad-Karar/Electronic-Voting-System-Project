@@ -1,0 +1,64 @@
+
+.res-main-div{
+    width: 100%;
+    height: 115vh;
+    background-color: rgb(74, 75, 75);
+    padding-top: 50px;
+}
+
+.res-out-div{
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.res-in-div1{
+    width: 90%;
+    height: 15vh;
+    background-color: aqua;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.res-in-div2{
+    width: 90%;
+    height: 15vh;
+    background-color: rgb(29, 34, 34);
+    margin: auto;
+    margin-top: 5px;
+}
+
+.res-in-div3{
+    width: 90%;
+    height: 15vh;
+    background-color: rgb(15, 39, 220);
+    margin: auto;
+    margin-top: 5px;
+}
+
+.res-in-div4{
+    width: 90%;
+    height: 15vh;
+    background-color: rgb(44, 218, 10);
+    margin: auto;
+    margin-top: 5px;
+}
+
+.res-in-div5{
+    width: 90%;
+    height: 15vh;
+    background-color: rgb(223, 223, 10);
+    margin: auto;
+    margin-top: 5px;
+}
+
+.res-in-div6{
+    width: 90%;
+    height: 15vh;
+    background-color: rgb(158, 20, 105);
+    margin: auto;
+    margin-top: 5px;
+}
+
