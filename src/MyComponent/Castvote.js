@@ -1,9 +1,13 @@
 import React from 'react';
-
+import '../style/castvote.css'
 export default function Castvote() {
   return (
     <div>
-      <h1>Hello</h1>
+      <div className="cv-main-div">
+        <div className="cv-div">
+            
+        </div>
+      </div>
     </div>
   )
 }
