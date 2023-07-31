@@ -15,33 +15,33 @@ export default function Signup() {
   const [email, setEmail] = useState('');
   const [pass, setPass] = useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
 
-    // Send the form data to the PHP API using fetch
-    fetch('http://http://localhost/phpmyadmin/index.php?route=/database/structure&db=evoting/sign_up_php.php', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      body: new URLSearchParams({
-        name: name,
-        cnic: cnic,
-        dob: dob,
-        email: email,
-        password: pass,
-      }),
-    })
-      .then((response) => response.text())
-      .then((data) => {
-        console.log(data); // Handle the response from the API as needed
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
-  };
+  //   // Send the form data to the PHP API using fetch
+  //   fetch('http://http://localhost/phpmyadmin/index.php?route=/database/structure&db=evoting/sign_up_php.php', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/x-www-form-urlencoded',
+  //     },
+  //     body: new URLSearchParams({
+  //       name: name,
+  //       cnic: cnic,
+  //       dob: dob,
+  //       email: email,
+  //       password: pass,
+  //     }),
+  //   })
+  //     .then((response) => response.text())
+  //     .then((data) => {
+  //       console.log(data); // Handle the response from the API as needed
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error:', error);
+  //     });
+  // };
 
-  // Rest of the component remains the same...
+  // // Rest of the component remains the same...
 
   return (
     <div>
