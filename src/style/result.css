@@ -21,6 +21,7 @@
     border: 2px solid black;
     margin: auto;
     margin-top: 5px;
+    padding: 35px;
 }
 
 .res-in-div2{
@@ -30,6 +31,7 @@
     border: 2px solid black;
     margin: auto;
     margin-top: 5px;
+    padding: 35px;
 }
 
 .res-in-div3{
@@ -39,6 +41,7 @@
     border: 2px solid black;
     margin: auto;
     margin-top: 5px;
+    padding: 35px;
 }
 
 .res-in-div4{
@@ -48,6 +51,7 @@
     border: 2px solid black;
     margin: auto;
     margin-top: 5px;
+    padding: 35px;
 }
 
 .res-in-div5{
@@ -57,14 +61,16 @@
     border: 2px solid black;
     margin: auto;
     margin-top: 5px;
+    padding: 35px;
 }
 
 .res-in-div6{
     width: 90%;
     height: 15vh;
     /* background-color: rgb(158, 20, 105); */
-    border: 2px solid black;
+    border: 1px solid black;
     margin: auto;
     margin-top: 5px;
+    padding: 35px;
 }
 

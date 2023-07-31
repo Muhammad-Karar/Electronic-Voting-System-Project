@@ -41,7 +41,7 @@ const candidatesData = [
     image1: anplaltain
   },
   {
-    title: 'Siraj ul Haq ',
+    title: 'Siraj ul Haq',
     party: 'Jamaat-e-Islami ',
     image: cpic5,
     image1: juibook
