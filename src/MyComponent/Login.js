@@ -2,7 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import '../style/log.css'
 import { Link } from 'react-router-dom';
-
 export default function Login() {
   const onChangeEmail = (event) =>{
     setEmail(event.target.value);

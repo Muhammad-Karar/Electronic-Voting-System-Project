@@ -13,6 +13,7 @@ import Candidates from './MyComponent/Candidates';
 import About from './MyComponent/About';
 import Result from './MyComponent/Result';
 import Castvote from './MyComponent/Castvote';
+
 function App() {
   return (
     <div>
