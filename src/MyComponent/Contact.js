@@ -16,7 +16,8 @@ export default function Contact() {
                         <h1>phone</h1>
                         <p>+92 3169512020 <br />
                         +92 3150166360 <br />
-                        +92 3109887050
+                        +92 3109887050 <br/>
+                        +92 3368811164
                         </p>
                         
                     </div>
@@ -26,7 +27,8 @@ export default function Contact() {
                         <h1>mail</h1>
                         <p>kararmuhammad8@gmail.com <br />
                         daudrazzaq7890@gmail.com
-                        neelabkhattak99@gmail.com</p>
+                        neelabkhattak99@gmail.com
+                        rizwanbangash704@gmail.com</p>
                     </div>
                     <div class="contact-1">
                         <i><FontAwesomeIcon icon={faHouse} style={{color: "#ed0c0c",}} /></i>
